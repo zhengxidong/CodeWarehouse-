@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="tests" tests="3" assertions="3" failures="1" errors="0" time="0.114299">
+    <testsuite name="UserTest" file="E:\phpstudy\WWW\wosunny.test\tests\UserTest.php" tests="3" assertions="3" failures="1" errors="0" time="0.114299">
+      <testsuite name="UserTest::testGetInfo" tests="3" assertions="3" failures="1" errors="0" time="0.114299">
+        <testcase name="testGetInfo with data set &quot;not exist&quot;" assertions="1" time="0.109117">
+          <failure type="PHPUnit_Framework_ExpectationFailedException">UserTest::testGetInfo with data set "not exist" (1, 2008)&#13;
+Failed asserting that 2003 matches expected 2008.
+&#13;
+E:\phpstudy\WWW\wosunny.test\tests\UserTest.php:30
+</failure>
+        </testcase>
+        <testcase name="testGetInfo with data set &quot;string like abc&quot;" assertions="1" time="0.001823"/>
+        <testcase name="testGetInfo with data set &quot;normal&quot;" assertions="1" time="0.003359"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
+

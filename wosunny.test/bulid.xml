@@ -1,0 +1,6 @@
+
+<logging>
+  <log type="json" target="tmp/1ogfile.json"/>
+  <log type="junit" target="tmp/logfile.xml" logIncompleteSkipped="false"/>
+  <log type="tap" target="tmp/logfile.tap"/>
+</logging>

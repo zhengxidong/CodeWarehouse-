@@ -1,0 +1,60 @@
+{
+    "event": "suiteStart",
+    "suite": "tests",
+    "tests": 3
+}{
+    "event": "suiteStart",
+    "suite": "UserTest",
+    "tests": 3
+}{
+    "event": "suiteStart",
+    "suite": "UserTest::testGetInfo",
+    "tests": 3
+}{
+    "event": "testStart",
+    "suite": "UserTest::testGetInfo",
+    "test": "UserTest::testGetInfo with data set \"not exist\" (1, 2008)"
+}{
+    "event": "test",
+    "suite": "UserTest::testGetInfo",
+    "test": "UserTest::testGetInfo with data set \"not exist\" (1, 2008)",
+    "status": "fail",
+    "time": 0.091398954391479,
+    "trace": [
+        {
+            "file": "E:\\phpstudy\\WWW\\wosunny.test\\tests\\UserTest.php",
+            "line": 30,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::"
+        }
+    ],
+    "message": "Failed asserting that 2003 matches expected 2008.\n",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "UserTest::testGetInfo",
+    "test": "UserTest::testGetInfo with data set \"string like abc\" ('aaa', 2001)"
+}{
+    "event": "test",
+    "suite": "UserTest::testGetInfo",
+    "test": "UserTest::testGetInfo with data set \"string like abc\" ('aaa', 2001)",
+    "status": "pass",
+    "time": 0.003000020980835,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "UserTest::testGetInfo",
+    "test": "UserTest::testGetInfo with data set \"normal\" (11, -100)"
+}{
+    "event": "test",
+    "suite": "UserTest::testGetInfo",
+    "test": "UserTest::testGetInfo with data set \"normal\" (11, -100)",
+    "status": "pass",
+    "time": 0.004450798034668,
+    "trace": [],
+    "message": "",
+    "output": ""
+}

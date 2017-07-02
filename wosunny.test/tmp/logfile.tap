@@ -1,0 +1,5 @@
+TAP version 13
+ok 1 - UserTest::testGetInfo with data set "not exist" (1, 2003)
+ok 2 - UserTest::testGetInfo with data set "string like abc" ('aaa', 2001)
+ok 3 - UserTest::testGetInfo with data set "normal" (11, -100)
+1..3

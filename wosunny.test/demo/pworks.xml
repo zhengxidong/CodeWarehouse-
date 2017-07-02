@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<application id='nextmeal-admin-api' default-action='restful'>
+    <globals>
+    </globals>
+
+    <filters>
+        <filter id='data-filter' class='pworks.mvc.filter.CachedHttpInputFilter' type='global'>
+            <!--parameter key='messageFilePath' value='conf/common_error_messages.php'/ -->
+            <!--parameter key='useMessagePack' value='TRUE'/ -->
+        </filter>
+    </filters>
+
+    <resultTypes>
+        <resultType id='json' class='pworks.mvc.result.JsonResult' />
+    </resultTypes>
+
+    <actions>
+        <action id='error' class='pworks.mvc.action.ErrorAction'>
+            <result id='succ' />
+        </action>
+        
+        <action id='restful' class='pworks.mvc.action.RestRouterAction'>
+            <result id='succ' type='json' />
+        </action>
+
+        <!-- demo test -->
+        <!-- <action id='GetInfo' type='rest' method='get' url='/id/:id/name/:name' /> -->
+        
+        <!-- demo test  INSERT-->  
+        <action id='CreateInfo' type='rest' method='get' url='/name/:name/age/:age' />
+        
+        <!-- demo test  SELECT--> 
+        <action id='GetInfo' type='rest' method='get' url='/id/:id' />
+
+        <!-- demo test  PUT--> 
+        <action id='PutInfo' type='rest' method='get' url='/put/id/:id/name/:name' />
+
+        <!-- demo test  DEL-->
+         <action id='DelInfo' type='rest' method='get' url='/del/id/:id' />
+    </actions>
+
+</application>
